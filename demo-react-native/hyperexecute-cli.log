@@ -1,0 +1,48 @@
+{"level":"info","time":"2025-06-03T07:22:49.079+0530","caller":"cmd/bin.go:119","msg":"Generating TraceID for tracking request: 01JWSQVGDP2E3GERCPG48Z2F9X \n"}
+{"level":"debug","time":"2025-06-03T07:22:49.770+0530","caller":"cmd/bin.go:145","msg":"cli os: darwin, cli arch: arm64"}
+{"level":"debug","time":"2025-06-03T07:22:50.636+0530","caller":"cmd/bin.go:154","msg":"Upstream version details: {Name:cli Min:0.2.277 Max:0.2.591} "}
+{"level":"info","time":"2025-06-03T07:22:50.636+0530","caller":"cmd/bin.go:163","msg":"Current binary version 0.2.585 is less than max upstream version 0.2.591."}
+{"level":"info","time":"2025-06-03T07:22:50.636+0530","caller":"updater/updater.go:63","msg":"Auto updating binary ..................."}
+{"level":"debug","time":"2025-06-03T07:22:50.636+0530","caller":"updater/updater.go:64","msg":"Download url: https://stage-downloads.hyperexecute.cloud/hyperexecute/cli/0.2.591/darwin/hyperexecute"}
+{"level":"debug","time":"2025-06-03T07:22:53.555+0530","caller":"updater/updater.go:85","msg":"New binary downloaded successfully "}
+{"level":"info","time":"2025-06-03T07:22:53.555+0530","caller":"cmd/bin.go:175","msg":"Update successfully installed. Restarting the binary..."}
+{"level":"debug","time":"2025-06-03T07:23:30.674+0530","caller":"cmd/bin.go:195","msg":"Child binary process exited with error: exit status 1"}
+":"2025-06-03T07:22:55.615+0530","caller":"cmd/bin.go:153","msg":"Upstream version details: {Name:cli Min:0.2.277 Max:0.2.591} "}
+{"level":"info","time":"2025-06-03T07:22:55.615+0530","caller":"cmd/bin.go:201","msg":"Generating TraceID for tracking request: 01JWSQVNET4F0QPY546TTCP4E8 \n"}
+{"level":"debug","time":"2025-06-03T07:22:57.176+0530","caller":"core/lifecycle.go:108","msg":"Setting environment"}
+{"level":"debug","time":"2025-06-03T07:22:57.176+0530","caller":"core/lifecycle.go:111","msg":"Parsing config"}
+{"level":"debug","time":"2025-06-03T07:22:57.176+0530","caller":"yamlconfigmanager/setup.go:719","msg":"Custom location for .hyperexecute.yaml specified. Using: hypexSim.yaml"}
+{"level":"debug","time":"2025-06-03T07:22:57.176+0530","caller":"yamlconfigmanager/setup.go:117","msg":"using hyperexecute config from : hypexSim.yaml"}
+{"level":"debug","time":"2025-06-03T07:22:57.874+0530","caller":"yamlconfigmanager/setup.go:2119","msg":"Autodetecting test type in files of path : /Users/rishavj/Documents/lambdatest-detox-framework/detox_testing/demo-react-native"}
+{"level":"debug","time":"2025-06-03T07:22:57.874+0530","caller":"yamlconfigmanager/setup.go:541","msg":"Tunnel: %!t(<nil>)"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:874","msg":"\n\u001b[4m\u001b[1m\u001b[97mExecution Plan\u001b[0m\u001b[22m\u001b[24m"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:675","msg":"Mode:    \u001b[36mautosplit\u001b[0m"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:735","msg":"Runson:    \u001b[36mios\u001b[0m"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:743","msg":"Concurrency:    \u001b[36m1\u001b[0m"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:760","msg":"Framework:"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:761","msg":"    Name:    \u001b[36mraw\u001b[0m"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:778","msg":"    Discovery Mode:    \u001b[36mlocal\u001b[0m"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:796","msg":"    discoveryType:    \u001b[36m\u001b[0m"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:807","msg":"Report:    \u001b[36mdisabled\u001b[0m"}
+{"level":"info","time":"2025-06-03T07:22:57.874+0530","caller":"models/HypertestYamlConfig.go:887","msg":""}
+{"level":"debug","time":"2025-06-03T07:22:57.874+0530","caller":"filevalidator/setup.go:49","msg":"Warning: Checking data.json file in current directory, no dataJsonPath found in .hyperexecute.yaml"}
+{"level":"debug","time":"2025-06-03T07:22:57.874+0530","caller":"filevalidator/setup.go:53","msg":"Warning: data.json file doesn't exist"}
+{"level":"debug","time":"2025-06-03T07:22:59.521+0530","caller":"frameworks/framework.go:62","msg":"version: 0.2"}
+{"level":"info","time":"2025-06-03T07:22:59.522+0530","caller":"raw/raw.go:131","msg":"Using app with unique id - lt://APP10104251901748334951012363"}
+{"level":"debug","time":"2025-06-03T07:22:59.522+0530","caller":"testdiscoverer/discoverer.go:176","msg":"Running discovery command: {cat lambdatest/discoveryIOS.txt []}"}
+{"level":"debug","time":"2025-06-03T07:22:59.522+0530","caller":"testdiscoverer/discoverer.go:81","msg":"Test Discovery Command: cat lambdatest/discoveryIOS.txt"}
+{"level":"info","time":"2025-06-03T07:22:59.534+0530","caller":"testdiscoverer/discoverer.go:123","msg":"\u001b[4m\u001b[1m\u001b[97mTest Discovery Result: 1\u001b[0m\u001b[22m\u001b[24m"}
+{"level":"info","time":"2025-06-03T07:22:59.534+0530","caller":"testdiscoverer/discoverer.go:124","msg":"    \u001b[2me2e:ios\u001b[22m\n"}
+{"level":"info","time":"2025-06-03T07:22:59.534+0530","caller":"core/lifecycle.go:348","msg":"Total tests discovered: 1"}
+{"level":"debug","time":"2025-06-03T07:23:00.569+0530","caller":"core/lifecycle.go:517","msg":"Job ID: c9017b76-fde4-4bff-a576-f70ebafe2a7a"}
+{"level":"debug","time":"2025-06-03T07:23:00.569+0530","caller":"core/lifecycle.go:520","msg":"User - rishavj, triggered job with ID c9017b76-fde4-4bff-a576-f70ebafe2a7a from CLI"}
+{"level":"debug","time":"2025-06-03T07:23:00.569+0530","caller":"core/lifecycle.go:523","msg":"User has provided raw as test type for the job with ID c9017b76-fde4-4bff-a576-f70ebafe2a7a"}
+{"level":"debug","time":"2025-06-03T07:23:00.569+0530","caller":"events/manager.go:95","msg":"Starting event manager"}
+{"level":"debug","time":"2025-06-03T07:23:00.569+0530","caller":"events/manager.go:97","msg":"SSE enabled, getting SSE connection"}
+{"level":"debug","time":"2025-06-03T07:23:00.570+0530","caller":"archivemanager/setup.go:340","msg":"digestMap: map[]"}
+{"level":"debug","time":"2025-06-03T07:23:00.570+0530","caller":"archivemanager/setup.go:346","msg":"Creating archive of target directory: /Users/rishavj/Documents/lambdatest-detox-framework/detox_testing/demo-react-native"}
+{"level":"debug","time":"2025-06-03T07:23:00.631+0530","caller":"core/lifecycle.go:59","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2025-06-03T07:23:00.631+0530","caller":"core/lifecycle.go:60","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2025-06-03T07:23:01.681+0530","caller":"events/manager.go:277","msg":"connection to hyperexecute server established successfully."}
+{"level":"debug","time":"2025-06-03T07:23:30.633+0530","caller":"cmd/bin.go:358","msg":"main: all goroutines have finished."}
+{"level":"debug","time":"2025-06-03T07:23:30.633+0530","caller":"cmd/bin.go:397","msg":"Exiting application due to error \u001b[91mERR::ZIP::ARC\u001b[0m     Unable to generate zip. open /Users/rishavj/Documents/lambdatest-detox-framework/detox_testing/demo-react-native/ios/Pods/Headers/Private/FBLazyVector/FBLazyVector/FBLazyIterator.h: no such file or directory\n    Unable to parse target [/Users/rishavj/Documents/lambdatest-detox-framework/detox_testing/demo-react-native] directory to archive files open /Users/rishavj/Documents/lambdatest-detox-framework/detox_testing/demo-react-native/ios/Pods/Headers/Private/FBLazyVector/FBLazyVector/FBLazyIterator.h: no such file or directory"}

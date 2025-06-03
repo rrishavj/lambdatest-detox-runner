@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@react-native-community/cli": "^18.0.0",
+    "@react-native-community/cli-platform-ios": "^18.0.0",
+    "@react-native/metro-config": "^0.79.2",
+    "detox": "^20.37.0",
+    "metro-config": "^0.82.4",
+    "metro-react-native-babel-preset": "^0.78.0"
+  },
+  "dependencies": {
+    "react-native": "^0.79.2"
+  }
+}

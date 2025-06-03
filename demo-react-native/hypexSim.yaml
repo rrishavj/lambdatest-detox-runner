@@ -1,0 +1,61 @@
+autosplit: true
+
+# Set the concurrency level for test execution (2 devices in parallel)
+concurrency: 1
+
+env:
+  DETOX: true 
+
+framework:
+    # Name of the test framework (raw in this case)
+    name: raw
+    args:
+        buildName: 29may
+        deviceLogs: true
+        devices: ["iPhone 16-18.0"]
+            # - "iPhone 14"
+            # - Galaxy S23-13
+        # fixedIP: "RZCW31VX6WF"
+        disableReleaseDevice: true
+        #detox
+            # MAESTRO: true
+        isRealMobile: false
+        # isVirtualDevice: true
+        # mobileDC: true
+        platformName: ios
+        appId: lt://APP10104251901748334951012363
+        # platformName: 
+        # privateCloud: true #private cloud
+        queueTimeout: 600
+        # Enable or disable video recording support
+        video: true
+
+
+# Make test status as HyperExecute job's status
+frameworkStatusOnly: true
+
+# job label for hyperexecute job
+jobLabel: ['yarn_start','detox', '29may']
+
+# Pre-install required dependencies from pre-setup scripts
+pre:
+    - bash lambdatest/scripts/pre-setup.sh
+
+# Specify the target platform for test execution (Android in this case)
+runson: ios
+# runson: linux
+
+# Test discovery configuration
+testDiscovery:
+    # Command to discover tests from the discovery.txt file
+    command: cat lambdatest/discoveryIOS.txt 
+    # Test discovery mode is static
+    mode: static 
+    # Test type is raw (custom test implementation)
+    # type: raw
+
+# Command to run the tests using the testRunnerCommand
+testRunnerCommand: bash lambdatest/scripts/execute1.sh $test
+
+# Define the version of the configuration file
+version: "0.2"
