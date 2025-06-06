@@ -115,6 +115,24 @@ rm -rf ~/Library/Developer/Xcode/DerivedData
 
 # Set correct terminal locale (UTF-8 is required by CocoaPods)
 export LANG=en_US.UTF-8
+
+=============== JavaScriptCore is being moved ===============
+JavaScriptCore has been extracted from react-native core
+and will be removed in a future release. It can now be
+installed from `@react-native-community/javascriptcore`
+See: https://github.com/react-native-community/javascriptcore
+=============================================================
+
+
+==================== DEPRECATION NOTICE =====================
+Calling `pod install` directly is deprecated in React Native
+because we are moving away from Cocoapods toward alternative
+solutions to build the project.
+* If you are using Expo, please run:
+`npx expo run:ios`
+* If you are using the Community CLI, please run:
+`yarn ios`
+=============================================================
 ```
 
 ---
