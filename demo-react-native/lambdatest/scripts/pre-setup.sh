@@ -58,4 +58,3 @@ Step 5: Navigate to the project directory and install dependencies
         exit 1
     }
 
-
