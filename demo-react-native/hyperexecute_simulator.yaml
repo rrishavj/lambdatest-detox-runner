@@ -1,7 +1,7 @@
 autosplit: true
 
 # Set the concurrency level for test execution (2 devices in parallel)
-concurrency: 1
+concurrency: 2
 
 env:
   DETOX: true 
@@ -10,24 +10,15 @@ framework:
     # Name of the test framework (raw in this case)
     name: raw
     args:
-        buildName: 29may
+        buildName: "DETOX TEST"
         deviceLogs: true
-        devices: ["iPhone 16-18.0"]
+        devices: ["iPhone 16-18.0"]                # set same details in detox.config.js as stated here.   
             # - "iPhone 14"
-            # - Galaxy S23-13
-        # fixedIP: "RZCW31VX6WF"
         disableReleaseDevice: true
-        #detox
-            # MAESTRO: true
         isRealMobile: false
-        # isVirtualDevice: true
-        # mobileDC: true
         platformName: ios
-        appId: lt://APP10104251901748334951012363
-        # platformName: 
-        # privateCloud: true #private cloud
+        appId: lt://APP10104251901748334951012363  # valid app_id: upload to https://appautomation.lambdatest.com/build?pageType=build
         queueTimeout: 600
-        # Enable or disable video recording support
         video: true
 
 
@@ -35,7 +26,7 @@ framework:
 frameworkStatusOnly: true
 
 # job label for hyperexecute job
-jobLabel: ['yarn_start','detox', '29may']
+jobLabel: ['detox', 'test_login']
 
 # Pre-install required dependencies from pre-setup scripts
 pre:
@@ -55,7 +46,7 @@ testDiscovery:
     # type: raw
 
 # Command to run the tests using the testRunnerCommand
-testRunnerCommand: bash lambdatest/scripts/execute1.sh $test
+testRunnerCommand: bash lambdatest/scripts/execute.sh $test
 
 # Define the version of the configuration file
 version: "0.2"

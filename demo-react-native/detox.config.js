@@ -20,9 +20,7 @@ module.exports = {
       "ios.release": {
         "type": "ios.app",
         "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/example.app",
-      //   "binaryPath": "ios/example_2.app",
-        // "binaryPath": "/Users/ltuser/lambda/apps/HYPM-33424863-1748366288974917666GCU/Firefox.app", 
-        "build": "xcodebuild -workspace ios/example.xcworkspace -UseNewBuildSystem=NO -scheme example -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+        "build": "xcodebuild -workspace ios/example.xcworkspace -scheme example -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -UseNewBuildSystem=NO",
         // "build": "xcodebuild -project ios/example.xcodeproj -scheme example -sdk iphonesimulator -configuration Release -derivedDataPath ios/build",
         // "launchArgs": {
         //   "detoxServer": "ws://localhost:8099",
@@ -31,7 +29,6 @@ module.exports = {
       "ios.debug": {
         "type": "ios.app",
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/example.app",
-        // "build": "xcodebuild -project ios/example.xcodeproj -scheme example -sdk iphonesimulator18.1 -configuration Debug -derivedDataPath ios/build",
         "build": "xcodebuild -workspace ios/example.xcworkspace  -scheme example -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build", //#-UseNewBuildSystem=NO
         "start": "scripts/start-rn.sh ios",
       },
@@ -63,11 +60,10 @@ module.exports = {
         type: "ios.simulator",
         headless: false,
         device: {
-          // type: "iPhone 16",
-          // // // os: "17.4" os is changed here
-          // os: "18.0",
-          type: "iPhone 14",
-          os: "18.1",
+          // pick iPhone devices available on https://www.lambdatest.com/capabilities-generator/ 
+          // and set in yaml file as well.
+          type: "iPhone 16",
+          os: "18.0",
         }
       },
       emulator: {
