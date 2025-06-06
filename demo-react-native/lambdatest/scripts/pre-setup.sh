@@ -27,6 +27,7 @@ rbenv global 3.2.2
 gem install bundler:2.6.8   # Ensure bundler is installed, latest version preferred
 bundle install --path vendor/bundle
 export LANG=en_US.UTF-8
+npm install --save-dev @react-native-community/cli
 
 # already installed on HyperExecute Mac/Simulator Hosts
     # arch -arm64 brew tap wix/brew
