@@ -53,9 +53,9 @@ npm run podInstall:ios
 # npx expo run:ios
 
 
-Step 5: Navigate to the project directory and install dependencies
-    cd /Users/ltuser/foreman/demo-react-native || {
-        echo "Error: Directory /home/ltuser/foreman/demo-react-native does not exist."
-        exit 1
-    }
+#Step 5: Navigate to the project directory and install dependencies
+cd /Users/ltuser/foreman/demo-react-native || {
+    echo "Error: Directory /home/ltuser/foreman/demo-react-native does not exist."
+    exit 1
+}
 
