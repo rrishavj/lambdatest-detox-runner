@@ -68,7 +68,6 @@ Replace:
 
 - Ensure the Detox project works locally on simulators before running in HyperExecute.
 - This repo assumes Detox is already initialized and correctly configured for iOS.
-- Only macOS runners support iOS simulators.
 
 ---
 
