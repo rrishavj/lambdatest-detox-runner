@@ -17,7 +17,7 @@ framework:
         disableReleaseDevice: true
         isRealMobile: false
         platformName: ios
-        appId: stock  #appId - should be stock
+        appId: stock  # app is uploaded with payload. hence appId should be set to stock
         queueTimeout: 600
         video: true
 

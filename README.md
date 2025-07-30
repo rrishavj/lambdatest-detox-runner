@@ -63,11 +63,14 @@ Replace:
 - `<ACCESS_KEY>` → your LambdaTest access key
 
 ---
-
 ## 📌 Notes
 
-- Ensure the Detox project works locally on simulators before running in HyperExecute.
+- Ensure the Detox project works **locally on iOS simulators** before running it on LambdaTest HyperExecute.
 - This repo assumes Detox is already initialized and correctly configured for iOS.
+- ⚠️ **This setup is intended for testing Detox on iOS simulators only.**  
+  Real device execution is not supported in this configuration.
+- 📦 **Payload must include the iOS app’s Xcode project or workspace** (`.xcodeproj` or `.xcworkspace`), along with all necessary source files and dependencies.
+- 🛠️ **The app will be built and tested on LambdaTest’s macOS-based simulator infrastructure**, where Detox, Xcode, and related CLI tools are preinstalled.
 
 ---
 
@@ -78,6 +81,8 @@ Replace:
 - [LambdaTest CLI Help](https://www.lambdatest.com/support/)
 
 ---
+
+
 
 ## 🆘 Need Help?
 
