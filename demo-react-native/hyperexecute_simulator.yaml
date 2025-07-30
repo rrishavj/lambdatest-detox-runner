@@ -17,7 +17,7 @@ framework:
         disableReleaseDevice: true
         isRealMobile: false
         platformName: ios
-        appId: lt://APP10104251901748334951012363  # valid app_id: upload to https://appautomation.lambdatest.com/build?pageType=build
+        appId: stock  #appId - should be stock
         queueTimeout: 600
         video: true
 
